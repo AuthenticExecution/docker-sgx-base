@@ -18,7 +18,7 @@ jobs:
       id: build
       uses: gianlu33/Publish-Docker-Github-Action@main
       with:
-        name: authexec/docker-sgx-tools
+        name: authexec/docker-sgx-base
         username: authexec
         password: ${{ secrets.DOCKER_TOKEN }}
         cache: ${{ github.event_name == 'push' }}
